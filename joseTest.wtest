@@ -7,3 +7,9 @@ test "Se puede enfermar" {
 	assert.that(jose.sePuedeEnfermar())
 
 }
+test "No se puede enfermar" {
+	jose.agregarHuevo(huevoKinder)
+	jose.agregarHuevo(huevoKinder)
+	assert.notThat(jose.sePuedeEnfermar())
+
+}
