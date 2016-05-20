@@ -1,0 +1,9 @@
+import jose.*
+import huevoKinder.*
+import huevoReposteria.*
+test "Se puede enfermar" {
+	jose.agregarHuevo(huevoKinder)
+	jose.agregarHuevo(huevoKinder)
+	assert.that(jose.sePuedeEnfermar())
+
+}
