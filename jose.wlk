@@ -1,3 +1,4 @@
+
 object jose {
 	var huevos=[]
 	method sePuedeEnfermar(){
@@ -8,5 +9,8 @@ object jose {
 	}
 	method agregarHuevo(unHuevo){
 		huevos.add(unHuevo)
+	}
+	method totalCaloriasHuevos2(){
+		return huevos.fold(0,{acum,huevo=>acum+huevo.calorias()})
 	}
 }
