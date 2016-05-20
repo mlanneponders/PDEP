@@ -13,3 +13,8 @@ test "No se puede enfermar" {
 	assert.notThat(jose.sePuedeEnfermar())
 
 }
+
+test "Total Calorias huevos" {
+	jose.agregarHuevo(huevoKinder)
+	assert.equals(900,jose.totalCaloriasHuevos2())
+}
