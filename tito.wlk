@@ -13,4 +13,7 @@ object tito {
 	method huevosQueLesGuste(){
 		return huevos.filter({huevo=>self.leGusta(huevo)})
 	}
+	method quedoContento(){
+		return !self.sePuedeEnfermar() and self.encontroAlMenosUnHuevoQueLeGuste()
+	}
 }
