@@ -13,4 +13,7 @@ object jose {
 	method totalCaloriasHuevos2(){
 		return huevos.fold(0,{acum,huevo=>acum+huevo.calorias()})
 	}
+	method huevosQueLesGuste(){
+		return huevos.filter({huevo=> self.leGusta(huevo)})
+	}
 }
