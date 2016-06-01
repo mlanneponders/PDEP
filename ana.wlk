@@ -9,10 +9,10 @@ object ana {
 		return unHuevo.tieneIngrediente('chocoAmargo').negate()	
 	}
 	method seVaAEnfermar(){
-		return self.cantidadHuevosEncuentra()>1
+		return self.cantidadHuevosQueLesGusta()>1
 	}
-	method cantidadHuevosEncuentra(){
-		return huevos.size()
+	method cantidadHuevosQueLesGusta(){
+		return (huevos.filter({huevo=> self.leGusta(huevo)})).size()
 	}
 	method agregarHuevo(unHuevo){
 		huevos.add(unHuevo)
